@@ -999,7 +999,7 @@ def brute():
 
         except IOError:
             print '\x1b[1;91m[!] File not found...'
-            print """\n\x1b[1;91m[!] \x1b[1;93mAdd another wordlist corect name"""
+            print ("\n\x1b[1;91m[!] \x1b[1;93mAdd another wordlist corect name")
             super()
             
  
@@ -1428,7 +1428,7 @@ def hpfrom_friends():
             try:
                 jok = requests.get('https://graph.facebook.com/' + idt + '?access_token=' + toket)
                 op = json.loads(jok.text)
-                print '\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m] \x1b[1;92mFrom\x1b[1;91m :\x1b[1;97m ' + op['name']
+                print '\x1b 1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m] \x1b[1;92mFrom\x1b[1;91m :\x1b[1;97m ' + op['name']
             except KeyError:
                 print '\x1b[1;91m[!] Not be friends'
                 raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
